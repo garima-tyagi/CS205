@@ -1,1 +1,1 @@
-tail -n 5 -f *.txt > Garima.txt
+tail -n 5 *.txt > Garima.txt
