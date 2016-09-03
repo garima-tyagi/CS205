@@ -1,0 +1,1 @@
+for file in *;  mkdir "${file%.*}"| mv $file "${file%.*}"; done
