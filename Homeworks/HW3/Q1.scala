@@ -9,6 +9,14 @@ class Queue[T]{
 			case _ => false
 		}
 	}
+
+	override def hashCode(): Int={
+             var hash: Int=0                                   
+             this.Lst.foreach{
+				 hash+=_.hashCode()
+		}
+		 return hash
+	}
 	
 	def enqueue(b:Any){
 
